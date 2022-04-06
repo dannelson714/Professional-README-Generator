@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'e-mail',
+        name: 'email',
         message: 'Please enter your e-mail address',
     },
     {
@@ -59,9 +59,8 @@ const questions = [
 ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    const fileName = `${fileName.toLowerCase().split(' ').join('')}.json`;
-    fs.writeFile("README", JSON.stringify(data), (err) => err ? console.log(err) : console.log('Success!'));
+function writeToFile(data) {
+    fs.writeFile("README.md", data, (err) => err ? console.log(err) : console.log('Success!'));
 }
 
 // TODO: Create a function to initialize app
@@ -69,8 +68,8 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-        const readMe = generateMarkdown(data);
-        writeToFile(data.title, readMe);
+        var readMe = generateMarkdown(data);
+        writeToFile(readMe);
      });
 }
 
