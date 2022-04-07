@@ -8,7 +8,7 @@ The main problems I faced with this project were the use of back-end functions i
 
 The following clip is a walkthrough of the program functionality that I used with Screencastify:
 
-![](./resources/README_walkthrough.mp4)
+https://user-images.githubusercontent.com/91272067/162096697-2e76142e-0007-4163-a4d6-616a0de7b02c.mp4
 
 ## Installation
 
